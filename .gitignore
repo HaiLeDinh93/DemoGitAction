@@ -1,0 +1,12 @@
+.svn
+.vs
+*.svn-base
+*.db
+*.db-journal
+bin
+obj
+*.log
+*.user
+*.pubxml
+docker-compose.Local.yml
+CarMD.Shell.Api/CarMD.Shell.Api.csproj.user

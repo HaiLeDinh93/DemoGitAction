@@ -1,0 +1,9 @@
+version: '3.4'
+
+services:
+  carmd.shell.api:
+    image: ${DOCKER_REGISTRY-}carmdshellapi
+    container_name: ${DOCKER_REGISTRY-}carmdshellapi
+    build:
+      context: .
+      dockerfile: CarMD.Shell.Api\Dockerfile
