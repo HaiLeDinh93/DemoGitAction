@@ -1,0 +1,22 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Autofac" Version="5.1.2" />
+    <PackageReference Include="log4net" Version="2.0.8" />
+    <PackageReference Include="Microsoft.AspNetCore.Mvc.Core" Version="2.2.5" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="3.1.1" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="3.1.1" />
+    <PackageReference Include="Z.EntityFramework.Plus.EFCore" Version="3.0.38" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\CarMD.Fleet.Common\CarMD.Fleet.Common.csproj" />
+    <ProjectReference Include="..\CarMD.Fleet.Core\CarMD.Fleet.Core.csproj" />
+    <ProjectReference Include="..\CarMD.Fleet.Data\CarMD.Fleet.Data.csproj" />
+  </ItemGroup>
+
+</Project>

@@ -1,0 +1,1529 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Innova.Enums</name>
+    </assembly>
+    <members>
+        <member name="T:Innova.Enums.ApplicationType">
+            <summary>
+             Application type
+            </summary>
+        </member>
+        <member name="F:Innova.Enums.ApplicationType.PCLink">
+            <summary>
+             PC Link application
+            </summary>
+        </member>
+        <member name="F:Innova.Enums.ApplicationType.PCLinkLauncher">
+            <summary>
+             PC Link Launcher application
+            </summary>
+        </member>
+        <member name="F:Innova.Enums.ApplicationType.OBD2Utility">
+            <summary>
+             Innova OBD2 Utility application
+            </summary>
+        </member>
+        <member name="F:Innova.Enums.ApplicationType.DataLogger">
+            <summary>
+            DataLogger application
+            </summary>
+        </member>
+        <member name="F:Innova.Enums.ApplicationType.ScanTool">
+            <summary>
+             Pass Through Scan Tool 0103 / OBD5000
+            </summary>
+        </member>
+        <member name="F:Innova.Enums.ApplicationType.MatcoUsbTool">
+            <summary>
+             Matco's Usb Tool
+            </summary>
+        </member>
+        <member name="F:Innova.Enums.ApplicationType.CarMDUsbTool">
+            <summary>
+            CarMD's Usb Tool
+            </summary>
+        </member>
+        <member name="F:Innova.Enums.ApplicationType.InnovaUsbToolFor31X0B">
+            <summary>
+             Innova's Usb Tool for 31X0B series
+            </summary>
+        </member>
+        <member name="F:Innova.Enums.ApplicationType.InnovaUsbToolFor3100F">
+            <summary>
+             Innova's Usb Tool for 3100F
+            </summary>
+        </member>
+        <member name="F:Innova.Enums.ApplicationType.FirmwareUpgradeTool">
+            <summary>
+            Firmware upgrade tool
+            </summary>
+        </member>
+        <member name="F:Innova.Enums.ApplicationType.CraftsmanUsbTool">
+            <summary>
+            Craftsman's Usb Tool
+            </summary>
+        </member>
+        <member name="F:Innova.Enums.ApplicationType.JOBDUsbTool">
+            <summary>
+            Japan Usb Tool
+            </summary>
+        </member>
+        <member name="F:Innova.Enums.ApplicationType.InternationalUsbTool">
+            <summary>
+            japan + CN Usb tool
+            </summary>
+        </member>
+        <member name="F:Innova.Enums.ApplicationType.T3040UsbTool">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="T:Innova.Enums.BufferFormat">
+            <summary>
+            Buffer format
+            </summary>
+        </member>
+        <member name="F:Innova.Enums.BufferFormat.Unknown">
+            <summary>
+            Unknown buffer format
+            </summary>
+        </member>
+        <member name="F:Innova.Enums.BufferFormat.OldDataBuffer">
+            <summary>
+            Old data buffer format
+            </summary>
+        </member>
+        <member name="F:Innova.Enums.BufferFormat.NewDataBuffer">
+            <summary>
+            New data buffer format
+            </summary>
+        </member>
+        <member name="F:Innova.Enums.BufferFormat.FutureDataBuffer">
+            <summary>
+            Future data buffer format
+            </summary>
+        </member>
+        <member name="F:Innova.Enums.BufferFormat.Obd1DataBuffer">
+            <summary>
+            Obd1 data buffer format
+            </summary>
+        </member>
+        <member name="F:Innova.Enums.BufferFormat.Version2">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="T:Innova.Enums.ConnectionInfo">
+            <summary>
+             Connection information
+            </summary>
+        </member>
+        <member name="M:Innova.Enums.ConnectionInfo.#ctor">
+            <summary>
+             Default constructor
+            </summary>
+        </member>
+        <member name="M:Innova.Enums.ConnectionInfo.#ctor(Innova.Enums.ApplicationType)">
+            <summary>
+             Constructor
+            </summary>
+            <param name="applicationType"><see cref="P:Innova.Enums.ConnectionInfo.ApplicationType"/> application type.</param>
+        </member>
+        <member name="M:Innova.Enums.ConnectionInfo.#ctor(Innova.Enums.ApplicationType,Innova.Enums.PartnerType)">
+            <summary>
+             Constructor
+            </summary>
+            <param name="applicationType"><see cref="P:Innova.Enums.ConnectionInfo.ApplicationType"/> application type.</param>
+            <param name="partnerType"><see cref="P:Innova.Enums.ConnectionInfo.PartnerType"/> partner type.</param>
+        </member>
+        <member name="P:Innova.Enums.ConnectionInfo.ApplicationType">
+            <summary>
+             Application type
+            </summary>
+        </member>
+        <member name="P:Innova.Enums.ConnectionInfo.PartnerType">
+            <summary>
+             Partner type
+            </summary>
+        </member>
+        <member name="P:Innova.Enums.ConnectionInfo.ToolInfo">
+            <summary>
+             Tool information
+            </summary>
+        </member>
+        <member name="T:Innova.Enums.EnumHelper">
+            <summary>
+            This class help to work with enums type
+            </summary>
+        </member>
+        <!-- Badly formed XML comment ignored for member "M:Innova.Enums.EnumHelper.CastToEnum``1(System.String)" -->
+        <member name="M:Innova.Enums.EnumHelper.CastToEnum``1(System.Int32)">
+            <summary>
+            Generic method that can convert a int to any type of enum
+            </summary>
+            <typeparam name="T">Enum type to convert to</typeparam>
+            <param name="number">The number.</param>
+            <returns>The enum item that match with the int</returns>
+            <example>MyEnumType d = CastToEnum&gt;MyEnumType&lt;(2);</example>
+        </member>
+        <member name="M:Innova.Enums.EnumHelper.GetCustomAttribute``1(System.Type)">
+            <summary>
+            Gets the custom attribute.
+            </summary>
+            <typeparam name="T"></typeparam>
+            <param name="type">The type.</param>
+            <returns></returns>
+        </member>
+        <member name="M:Innova.Enums.EnumHelper.GetCustomAttribute``1(System.Type,System.Int32)">
+            <summary>
+            Gets the custom attribute.
+            </summary>
+            <param name="type">The type.</param>
+            <param name="value">The value.</param>
+            <returns></returns>
+        </member>
+        <member name="T:Innova.Enums.ErrorCodeType">
+            <summary>
+            The enumeration which defines what type of diagnostic report error code an error code is when displayed on the diagnostic report. 
+            </summary>
+        </member>
+        <member name="F:Innova.Enums.ErrorCodeType.Primary">
+            <summary>
+            Indicates that the error code should be shown as the primary diagnostic report code.
+            </summary>s
+        </member>
+        <member name="F:Innova.Enums.ErrorCodeType.FirstStored">
+            <summary>
+            Indicates that the error code should be shown as the first stored diagnostic report code.
+            </summary>
+        </member>
+        <member name="F:Innova.Enums.ErrorCodeType.AdditionalStored">
+            <summary>
+            Indicates that the error code should be shown as an additional stored diagnostic report code.
+            </summary>
+        </member>
+        <member name="F:Innova.Enums.ErrorCodeType.FirstPending">
+            <summary>
+            Indicates that the error code should be shown as the first pending diagnostic report code.
+            </summary>
+        </member>
+        <member name="F:Innova.Enums.ErrorCodeType.AdditionalPending">
+            <summary>
+            Indicates that the error code should be shown as an additional pending diagnostic report code.
+            </summary>
+        </member>
+        <member name="F:Innova.Enums.ErrorCodeType.Abs">
+            <summary>
+            Abs code
+            </summary>
+        </member>
+        <member name="T:Innova.Enums.Feature">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="T:Innova.Enums.FeatureIndex">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="T:Innova.Enums.FeaturesSetupValue">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="T:Innova.Enums.ManufactureDictionary">
+            <summary>
+            Manufacture dictionary
+            </summary>
+        </member>
+        <member name="M:Innova.Enums.ManufactureDictionary.#ctor(System.Boolean)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Innova.Enums.ManufactureDictionary"/> class.
+            </summary>
+            <param name="isManufactureStandard">if set to <c>true</c> [is manufacture standard].</param>
+        </member>
+        <member name="M:Innova.Enums.ManufactureDictionary.#ctor(System.Boolean,Innova.Enums.ManufactureType)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Innova.Enums.ManufactureDictionary"/> class.
+            </summary>
+            <param name="isManufactureStandard">if set to <c>true</c> [is manufacture standard].</param>
+            <param name="manufactureType">Type of the manufacture.</param>
+        </member>
+        <member name="M:Innova.Enums.ManufactureHelper.GetManufacture(System.String,Innova.Enums.BufferType)">
+            <summary>
+            Gets the manufacture.
+            </summary>
+            <param name="manufacture">The manufacture.</param>
+            <param name="bufferType">Type of the buffer.</param>
+            <returns></returns>
+        </member>
+        <member name="T:Innova.Enums.PartnerType">
+            <summary>
+             Partner type
+            </summary>
+        </member>
+        <member name="F:Innova.Enums.PartnerType.NoneOrUnknown">
+            <summary>
+            None or unknown partner
+            </summary>
+        </member>
+        <member name="F:Innova.Enums.PartnerType.RepairSolutions">
+            <summary>
+            RepairSolutions partner
+            </summary>
+        </member>
+        <member name="F:Innova.Enums.PartnerType.CarScan">
+            <summary>
+            CarScan partner
+            </summary>
+        </member>
+        <member name="F:Innova.Enums.PartnerType.JOBD">
+            <summary>
+            Japanese partner
+            </summary>
+        </member>
+        <member name="F:Innova.Enums.PartnerType.Matco">
+            <summary>
+            Matco partner
+            </summary>
+        </member>
+        <member name="F:Innova.Enums.PartnerType.Craftsman">
+            <summary>
+            Craftsman partner
+            </summary>
+        </member>
+        <member name="F:Innova.Enums.PartnerType.BWD">
+            <summary>
+            BWD partner
+            </summary>
+        </member>
+        <member name="F:Innova.Enums.PartnerType.SnapOn">
+            <summary>
+            Snap-On partner
+            </summary>
+        </member>
+        <member name="F:Innova.Enums.PartnerType.Oreilly">
+            <summary>
+            O'Reilly partner
+            </summary>
+        </member>
+        <member name="F:Innova.Enums.PartnerType.CarMD">
+            <summary>
+            CarMD partner
+            </summary>
+        </member>
+        <member name="F:Innova.Enums.PartnerType.OBD2Utility">
+            <summary>
+            PCLink OBD2 Utility
+            </summary>
+        </member>
+        <member name="F:Innova.Enums.PartnerType.PCLinkChinese">
+            <summary>
+             PCLink Chinese
+            </summary>
+        </member>
+        <member name="F:Innova.Enums.PartnerType.PCLinkVietnamese">
+            <summary>
+            PCLink Vietnamese
+            </summary>
+        </member>
+        <member name="F:Innova.Enums.PartnerType.Innova">
+            <summary>
+            Innova - self partner
+            </summary>
+        </member>
+        <member name="T:Innova.Enums.PartType">
+            <summary>
+            Summary description for PartType.
+            </summary>
+        </member>
+        <member name="F:Innova.Enums.PartType.ReplacementLamps">
+            <summary>
+            Replacement Lamps
+            </summary>
+        </member>
+        <member name="F:Innova.Enums.PartType.SparkPlugs">
+            <summary>
+            Spark Plugs
+            </summary>
+        </member>
+        <member name="F:Innova.Enums.PartType.Wiring">
+            <summary>
+            Wiring
+            </summary>
+        </member>
+        <member name="F:Innova.Enums.PartType.OilFilters">
+            <summary>
+            Oil Filters
+            </summary>
+        </member>
+        <member name="F:Innova.Enums.PartType.AirFilters">
+            <summary>
+            Air Filters
+            </summary>
+        </member>
+        <member name="F:Innova.Enums.PartType.FuelFilters">
+            <summary>
+            Fuel Filters
+            </summary>
+        </member>
+        <member name="F:Innova.Enums.PartType.WiperBlades">
+            <summary>
+            Wiper Blades
+            </summary>
+        </member>
+        <member name="F:Innova.Enums.PartType.Batteries">
+            <summary>
+            Batteries
+            </summary>
+        </member>
+        <member name="F:Innova.Enums.PartType.Tires">
+            <summary>
+            Tires
+            </summary>
+        </member>
+        <member name="T:Innova.Enums.ScanToolSystemInfoBuffer">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:Innova.Enums.ScanToolSystemInfoBuffer.ResponseID">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:Innova.Enums.ScanToolSystemInfoBuffer.Service">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:Innova.Enums.ScanToolSystemInfoBuffer.PID">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:Innova.Enums.ScanToolSystemInfoBuffer.NoOfDataBytesHigher">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:Innova.Enums.ScanToolSystemInfoBuffer.NoOfDataBytesLower">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:Innova.Enums.ScanToolSystemInfoBuffer.FirmwareVersion">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:Innova.Enums.ScanToolSystemInfoBuffer.BootLoaderVersion">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:Innova.Enums.ScanToolSystemInfoBuffer.DatabaseVersion">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:Innova.Enums.ScanToolSystemInfoBuffer.Guid">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:Innova.Enums.ScanToolSystemInfoBuffer.ToolId">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:Innova.Enums.ScanToolSystemInfoBuffer.LedStatus">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:Innova.Enums.ToolID.OBD3100E">
+            <summary>
+            3100e
+            </summary>
+        </member>
+        <member name="F:Innova.Enums.ToolID.CARMD2100P">
+            <summary>
+            2100p
+            </summary>
+        </member>
+        <member name="F:Innova.Enums.ToolID.OBD3030X">
+            <summary>
+            3030x
+            </summary>
+        </member>
+        <member name="F:Innova.Enums.ToolID.KIOSK3000">
+            <summary>
+            Kiosk 3000
+            </summary>
+        </member>
+        <member name="F:Innova.Enums.ToolID.OBD5000">
+            <summary>
+            OBD 5000
+            </summary>
+        </member>
+        <member name="F:Innova.Enums.ToolID.PARSON">
+            <summary>
+            Parson
+            </summary>
+        </member>
+        <member name="F:Innova.Enums.ToolID.OBD3030M">
+            <summary>
+            3030m
+            </summary>
+        </member>
+        <member name="F:Innova.Enums.ToolID.KIOSK3000_BCS">
+            <summary>
+            Kiosk 3000 Bcs
+            </summary>
+        </member>
+        <member name="F:Innova.Enums.ToolID.OBD3030J">
+            <summary>
+            3031jp
+            </summary>
+        </member>
+        <member name="F:Innova.Enums.ToolID.OBD3100J">
+            <summary>
+            3100jp
+            </summary>
+        </member>
+        <member name="F:Innova.Enums.ToolID.OBD3010E">
+            <summary>
+            3010e
+            </summary>
+        </member>
+        <member name="F:Innova.Enums.ToolID.HANDHELD">
+            <summary>
+            Handheld
+            </summary>
+        </member>
+        <member name="F:Innova.Enums.ToolID.OBD3100EABSBOSCH">
+            <summary>
+            3100e Abs Bosch
+            </summary>
+        </member>
+        <member name="F:Innova.Enums.ToolID.CARMD2100E">
+            <summary>
+            CarMD 2100e
+            </summary>
+        </member>
+        <member name="F:Innova.Enums.ToolID.OBD3030E">
+            <summary>
+            3030e
+            </summary>
+        </member>
+        <member name="F:Innova.Enums.ToolID.OBD3030sc">
+            <summary>
+            3030sc
+            </summary>
+        </member>
+        <member name="F:Innova.Enums.ToolID.CARMD2120">
+            <summary>
+            CarMD 2120
+            </summary>
+        </member>
+        <member name="F:Innova.Enums.ToolID.CARMD2110">
+            <summary>
+            CarMD 2110
+            </summary>
+        </member>
+        <member name="F:Innova.Enums.ToolID.Matco3022">
+            <summary>
+            Matco 3022
+            </summary>
+        </member>
+        <member name="F:Innova.Enums.ToolID.CARMD2140">
+            <summary>
+            CarMD 2140
+            </summary>
+        </member>
+        <member name="F:Innova.Enums.ToolID.BLUETOOTH">
+            <summary>
+            Bluetooth
+            </summary>
+        </member>
+        <member name="F:Innova.Enums.ToolID.Unknown">
+            <summary>
+            Unknown
+            </summary>
+        </member>
+        <member name="T:Innova.Enums.UsbCommand">
+            <summary>
+             Usb commands
+            </summary>
+        </member>
+        <member name="F:Innova.Enums.UsbCommand.ReadDataBuffer1">
+            <summary>
+            Read data buffer 1
+            </summary>
+        </member>
+        <member name="F:Innova.Enums.UsbCommand.ReadDataBuffer2">
+            <summary>
+            Read data buffer 2
+            </summary>
+        </member>
+        <member name="F:Innova.Enums.UsbCommand.ReadEnhancedBuffer1">
+            <summary>
+            Read enhanced buffer 1  
+            </summary>
+        </member>
+        <member name="F:Innova.Enums.UsbCommand.ReadEnhancedBuffer2">
+            <summary>
+            Read enhanced buffer 2
+            </summary>
+        </member>
+        <member name="F:Innova.Enums.UsbCommand.ReadSystemInfo">
+            <summary>
+            Read system information
+            </summary>
+        </member>
+        <member name="F:Innova.Enums.UsbCommand.JumpBootloader">
+            <summary>
+            Jump to bootloader
+            </summary>
+        </member>
+        <member name="F:Innova.Enums.UsbCommand.ReadMemory">
+            <summary>
+            Read memory
+            </summary>
+        </member>
+        <member name="F:Innova.Enums.UsbCommand.WriteMemory">
+            <summary>
+            Write memory
+            </summary>
+        </member>
+        <member name="F:Innova.Enums.UsbCommand.ReadFlash">
+            <summary>
+            Read flash
+            </summary>
+        </member>
+        <member name="F:Innova.Enums.UsbCommand.WriteFlash">
+            <summary>
+            Write flash
+            </summary>
+        </member>
+        <member name="F:Innova.Enums.UsbCommand.ReadGuid">
+            <summary>
+            Read guid
+            </summary>
+        </member>
+        <member name="F:Innova.Enums.UsbCommand.ReadVin">
+            <summary>
+            Read Vin
+            </summary>
+        </member>
+        <member name="F:Innova.Enums.UsbCommand.ReadKioskToolId">
+            <summary>
+            Read kiosk toolid
+            </summary>
+        </member>
+        <member name="F:Innova.Enums.UsbCommand.ReadManufacturer">
+            <summary>
+            Read manufacturer
+            </summary>
+        </member>
+        <member name="F:Innova.Enums.UsbCommand.ReadPhoneNumber">
+            <summary>
+            Read phone number
+            </summary>
+        </member>
+        <member name="F:Innova.Enums.UsbCommand.WriteGuid">
+            <summary>
+            Write guid
+            </summary>
+        </member>
+        <member name="F:Innova.Enums.UsbCommand.WriteVin">
+            <summary>
+            Write Vin
+            </summary>
+        </member>
+        <member name="F:Innova.Enums.UsbCommand.WriteKioskToolId">
+            <summary>
+            Write Kiosk ToolId
+            </summary>
+        </member>
+        <member name="F:Innova.Enums.UsbCommand.WriteManufacturer">
+            <summary>
+            Write manufacturer
+            </summary>
+        </member>
+        <member name="F:Innova.Enums.UsbCommand.WritePhoneNumber">
+            <summary>
+            Write phone number
+            </summary>
+        </member>
+        <member name="F:Innova.Enums.UsbCommand.WriteMonitors">
+            <summary>
+            Write monitors
+            </summary>
+        </member>
+        <member name="F:Innova.Enums.UsbCommand.WriteStoredDtc">
+            <summary>
+            Write stored DTCs
+            </summary>
+        </member>
+        <member name="F:Innova.Enums.UsbCommand.WritePendingDtc">
+            <summary>
+            Write pending DTCs
+            </summary>
+        </member>
+        <member name="F:Innova.Enums.UsbCommand.WriteFreezeDtc">
+            <summary>
+            Write Freeze frame DTC
+            </summary>
+        </member>
+        <member name="F:Innova.Enums.UsbCommand.EndTransfer">
+            <summary>
+            End transfer
+            </summary>
+        </member>
+        <member name="F:Innova.Enums.UsbCommand.WriteAbsSetup">
+            <summary>
+            Write ABS setup
+            </summary>
+        </member>
+        <member name="F:Innova.Enums.UsbCommand.WriteSrsSetup">
+            <summary>
+            Write SRS setup
+            </summary>
+        </member>
+        <member name="F:Innova.Enums.UsbCommand.WriteLedStatus">
+            <summary>
+            Write led status
+            </summary>
+        </member>
+        <member name="F:Innova.Enums.UsbCommand.ReadSystemSetting">
+            <summary>
+            Read system setting
+            </summary>
+        </member>
+        <member name="F:Innova.Enums.UsbCommand.ReadService9Vin">
+            <summary>
+            Read Vin in service 9 buffer
+            </summary>
+        </member>
+        <member name="F:Innova.Enums.UsbCommand.SoftReset">
+            <summary>
+            Soft reset
+            </summary>
+        </member>
+        <member name="F:Innova.Enums.UsbCommand.ClearService1To9">
+            <summary>
+            Clear data from service 1 to 9
+            </summary>
+        </member>
+        <member name="F:Innova.Enums.UsbCommand.CheckInComplete">
+            <summary>
+            CheckIn complete
+            </summary>
+        </member>
+        <member name="F:Innova.Enums.UsbCommand.ReadAbsBuffer">
+            <summary>
+            Read ABS buffer
+            </summary>
+        </member>
+        <member name="F:Innova.Enums.UsbCommand.ReadSrsBuffer">
+            <summary>
+            Read SRS buffer
+            </summary>
+        </member>
+        <member name="F:Innova.Enums.UsbCommand.ReadRecordedLiveData">
+            <summary>
+            Read Recorded live data
+            </summary>
+        </member>
+        <member name="F:Innova.Enums.UsbCommand.ReadRecordTime">
+            <summary>
+            Read record time
+            </summary>
+        </member>
+        <member name="F:Innova.Enums.UsbCommand.ReadCommand">
+            <summary>
+            Read command
+            </summary>
+        </member>
+        <member name="F:Innova.Enums.UsbCommand.WriteCommand">
+            <summary>
+            Write command
+            </summary>
+        </member>
+        <member name="F:Innova.Enums.UsbCommand.CheckValidCustomer">
+            <summary>
+            Check valid customer
+            </summary>
+        </member>
+        <member name="F:Innova.Enums.UsbCommand.ChangeCustomerId">
+            <summary>
+            Change customer id
+            </summary>
+        </member>
+        <member name="F:Innova.Enums.UsbCommand.ReadSpecialTestData">
+            <summary>
+            Read special test data
+            </summary>
+        </member>
+        <member name="F:Innova.Enums.UsbCommand.DataloggerCommand">
+            <summary>
+            Datalogger command
+            </summary>
+        </member>
+        <member name="F:Innova.Enums.UsbCommand.UpgradeFirmware">
+            <summary>
+            Upgrade firmware
+            </summary>
+        </member>
+        <member name="F:Innova.Enums.UsbCommand.UpgradeBootLoader">
+            <summary>
+            Upgrade bootloader
+            </summary>
+        </member>
+        <member name="F:Innova.Enums.UsbCommand.WriteOBD1Setup">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:Innova.Enums.UsbCommand.WriteLiveDataSetup">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:Innova.Enums.UsbCommand.WriteEnhancedDTCSetup">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:Innova.Enums.UsbCommand.WriteSpecialTestSetup">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:Innova.Enums.UsbCommand.UsbClearABS">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:Innova.Enums.UsbCommand.UsbClearSRS">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:Innova.Enums.UsbCommand.UsbClearEnhanced">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:Innova.Enums.UsbCommand.UsbClearLiveData">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:Innova.Enums.UsbCommand.UsbClearSpecialTestData">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:Innova.Enums.UsbCommand.ReadTestData">
+            <summary>
+            Read test data
+            </summary>
+        </member>
+        <member name="T:Innova.Enums.UsbProductId">
+            <summary>
+             Usb product Ids
+            </summary>
+        </member>
+        <member name="F:Innova.Enums.UsbProductId.T2140LM">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:Innova.Enums.UsbProductId.T2100">
+            <summary>
+            2100 (0x0000)
+            </summary>
+        </member>
+        <member name="F:Innova.Enums.UsbProductId.CarScan">
+            <summary>
+            CarScan (0x0100)
+            </summary>
+        </member>
+        <member name="F:Innova.Enums.UsbProductId.T3100B">
+            <summary>
+            3100B (0x0101)
+            </summary>
+        </member>
+        <member name="F:Innova.Enums.UsbProductId.T3030B">
+            <summary>
+            3030B (0x0102)
+            </summary>
+        </member>
+        <member name="F:Innova.Enums.UsbProductId.T3100A">
+            <summary>
+            3100A (0x0110)
+            </summary>
+        </member>
+        <member name="F:Innova.Enums.UsbProductId.PcScanTool">
+            <summary>
+            PC Scan Tool (0x0120)
+            </summary>
+        </member>
+        <member name="F:Innova.Enums.UsbProductId.T5000Ecu">
+            <summary>
+            5000 ECU (0x0129)
+            </summary>
+        </member>
+        <member name="F:Innova.Enums.UsbProductId.CommonTools">
+            <summary>
+            Common tools (0x0103)
+            </summary>
+        </member>
+        <member name="F:Innova.Enums.UsbProductId.T3040">
+            <summary>
+            3040 (0x0140)
+            tool nhỏ
+            </summary>
+        </member>
+        <member name="F:Innova.Enums.UsbProductId.T3100Evn">
+            <summary>
+            3100evn (0x0161)
+            </summary>
+        </member>
+        <member name="F:Innova.Enums.UsbProductId.T3100EvnOld">
+            <summary>
+            3030evn (0x0160)
+            This tool is not exist
+            </summary>
+            old tool support/ not exist in real
+        </member>
+        <member name="F:Innova.Enums.UsbProductId.T3030EvnOld">
+            <summary>
+            3130bvn (0x0162)
+            </summary>
+        </member>
+        <member name="F:Innova.Enums.UsbProductId.T3030Evn">
+            <summary>
+            3030evn (0x016E)
+            </summary>
+        </member>
+        <member name="F:Innova.Enums.UsbProductId.T3040Vn">
+            <summary>
+            3130 Bvn 
+            toolId 0x10
+            </summary>
+        </member>
+        <member name="F:Innova.Enums.UsbProductId.T3130Bvn">
+            <summary>
+            3130 Bvn 
+            toolId 0x03
+            </summary>
+        </member>
+        <member name="F:Innova.Enums.UsbProductId.T3030E">
+            <summary>
+            3030 E 
+            ToolId 0x0E
+            </summary>
+        </member>
+        <member name="F:Innova.Enums.UsbProductId.T3140Bvn">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:Innova.Enums.UsbProductId.T3100Est">
+            <summary>
+            3100est (0x0203)
+            </summary>
+        </member>
+        <member name="F:Innova.Enums.UsbProductId.T2300Est">
+            <summary>
+            2300 datalogger (0x0204)
+            </summary>
+        </member>
+        <member name="F:Innova.Enums.UsbProductId.T2100Est">
+            <summary>
+            2100est (0x0210)
+            </summary>
+        </member>
+        <member name="F:Innova.Enums.UsbProductId.T3030Est">
+            <summary>
+            3030est (0x0211)
+            </summary>
+        </member>
+        <member name="F:Innova.Enums.UsbProductId.T2120Est">
+            <summary>
+            2120est (0x0215)
+            </summary>
+        </member>
+        <member name="F:Innova.Enums.UsbProductId.T3100F_ABS">
+            <summary>
+            3100f Abs (0x0300)
+            </summary>
+        </member>
+        <member name="F:Innova.Enums.UsbProductId.T3100F_LD">
+            <summary>
+            3100f Live Data (0x0301)
+            </summary>
+        </member>
+        <member name="F:Innova.Enums.UsbProductId.T3100LDsc">
+            <summary>
+            3100LDsc (0x0303)
+            </summary>
+        </member>
+        <member name="F:Innova.Enums.UsbProductId.T3100F_FF">
+            <summary>
+            3100f FreezeFrame
+            </summary>
+        </member>
+        <member name="F:Innova.Enums.UsbProductId.T3100F_ABS_256">
+            <summary>
+            3100f Abs (0x0305)
+            </summary>
+        </member>
+        <member name="F:Innova.Enums.UsbProductId.T3100F_LD_256">
+            <summary>
+            3100f LiveData (0x0306)
+            </summary>
+        </member>
+        <member name="F:Innova.Enums.UsbProductId.T3100F_FF_256">
+            <summary>
+            3100f FreezeFrame (0x0306)
+            </summary>
+        </member>
+        <member name="F:Innova.Enums.UsbProductId.T3250Jp">
+            <summary>
+            3250jp (0x0326)
+            </summary>
+        </member>
+        <member name="F:Innova.Enums.UsbProductId.T3260Jp">
+            <summary>
+            3260jp (0x0327)
+            </summary>
+        </member>
+        <member name="F:Innova.Enums.UsbProductId.T3200Cn">
+            <summary>
+            3200 China (0x0348)
+            </summary>
+        </member>
+        <member name="F:Innova.Enums.UsbProductId.T3130Cn">
+            <summary>
+            3130 China (0x0349)
+            </summary>
+        </member>
+        <member name="F:Innova.Enums.UsbProductId.T3032">
+            <summary>
+            Matco 3032 (0x0400)
+            tool nhỏ
+            </summary>
+        </member>
+        <member name="F:Innova.Enums.UsbProductId.T3042">
+            <summary>
+            3042 (0x0401)
+            </summary>
+        </member>
+        <member name="F:Innova.Enums.UsbProductId.T3052">
+            <summary>
+            3052 (0x0402)
+            </summary>
+        </member>
+        <member name="F:Innova.Enums.UsbProductId.T3132">
+            <summary>
+            3132 (0x0403)
+            </summary>
+        </member>
+        <member name="F:Innova.Enums.UsbProductId.T3134">
+            <summary>
+            3134 (0x0404)
+            </summary>
+        </member>
+        <member name="F:Innova.Enums.UsbProductId.T3142">
+            <summary>
+            3142 (0x0405)
+            </summary>
+        </member>
+        <member name="F:Innova.Enums.UsbProductId.T3144">
+            <summary>
+            3144 (0x0406)
+            </summary>
+        </member>
+        <member name="F:Innova.Enums.UsbProductId.T3152">
+            <summary>
+            3152 (0x0407)
+            </summary>
+        </member>
+        <member name="F:Innova.Enums.UsbProductId.T3154">
+            <summary>
+            3154 (0x0408)
+            </summary>
+        </member>
+        <member name="F:Innova.Enums.UsbProductId.T3162">
+            <summary>
+            3162 (0x0409)
+            </summary>
+        </member>
+        <member name="F:Innova.Enums.UsbProductId.T3164">
+            <summary>
+            3164 (0x040A)
+            </summary>
+        </member>
+        <member name="F:Innova.Enums.UsbProductId.T3172">
+            <summary>
+            3172 (0x040B)
+            </summary>
+        </member>
+        <member name="F:Innova.Enums.UsbProductId.T3174">
+            <summary>
+            3174 (0x040C)
+            </summary>
+        </member>
+        <member name="F:Innova.Enums.UsbProductId.T3042_NeF">
+            <summary>
+            8M flash 3042
+            </summary>
+        </member>
+        <member name="F:Innova.Enums.UsbProductId.T3132_NeF">
+            <summary>
+            8M flash 3132
+            </summary>
+        </member>
+        <member name="F:Innova.Enums.UsbProductId.T3152_NeF">
+            <summary>
+            8M flash 3152
+            </summary>
+        </member>
+        <member name="F:Innova.Enums.UsbProductId.T3130B_Oreilly">
+            <summary>
+            3130A O'Reilly (0x0500)
+            </summary>
+        </member>
+        <member name="F:Innova.Enums.UsbProductId.T3130B_Craftsman">
+            <summary>
+            3130A Craftsman (0x0501)
+            </summary>
+        </member>
+        <member name="F:Innova.Enums.UsbProductId.T3130B_SnapOn">
+            <summary>
+            3130A Snap-on (0x0502)
+            </summary>
+        </member>
+        <member name="F:Innova.Enums.UsbProductId.T3130B_Innova">
+            <summary>
+            3130A Innova (0x0503)
+            </summary>
+            
+        </member>
+        <member name="F:Innova.Enums.UsbProductId.T3140B">
+            <summary>
+            3140b (0x0504)
+            </summary>
+        </member>
+        <member name="F:Innova.Enums.UsbProductId.T3150B">
+            <summary>
+            3140b (0x0504)
+            </summary>
+        </member>
+        <member name="F:Innova.Enums.UsbProductId.T3120B">
+            <summary>
+            3120b (0x0505)
+            </summary>
+        </member>
+        <member name="F:Innova.Enums.UsbProductId.T3160B">
+            <summary>
+            3160b (0x0506)
+            </summary>
+        </member>
+        <member name="F:Innova.Enums.UsbProductId.T3170B">
+            <summary>
+            3170B (0x0507)
+            </summary>
+        </member>
+        <member name="F:Innova.Enums.UsbProductId.T3165Bsc">
+            <summary>
+            3165Bsc (0x0508)
+            </summary>
+        </member>
+        <member name="F:Innova.Enums.UsbProductId.T3140Bsc">
+            <summary>
+            3140Bsc (0x0509)
+            </summary>
+        </member>
+        <member name="F:Innova.Enums.UsbProductId.T3155B">
+            <summary>
+            Oreily's 3155B
+            </summary>
+        </member>
+        <member name="F:Innova.Enums.UsbProductId.T3130C">
+            <summary>
+            3130C FIX ASSIST (0x0243)
+            </summary>
+        </member>
+        <member name="T:Innova.Enums.UsbProduct">
+            <summary>
+            Usb product
+            </summary>
+        </member>
+        <member name="M:Innova.Enums.UsbProduct.IsNewDataBuffer(Innova.Enums.UsbProductId)">
+            <summary>
+            Determines whether [is new data buffer] [the specified product id].
+            </summary>
+            <param name="productId">The product id.</param>
+            <returns>
+            	<c>true</c> if [is new data buffer] [the specified product id]; otherwise, <c>false</c>.
+            </returns>
+        </member>
+        <member name="M:Innova.Enums.UsbProduct.IsOldDataBuffer(Innova.Enums.UsbProductId)">
+            <summary>
+            Determines whether [is old data buffer] [the specified product id].
+            </summary>
+            <param name="productId">The product id.</param>
+            <returns>
+            	<c>true</c> if [is old data buffer] [the specified product id]; otherwise, <c>false</c>.
+            </returns>
+        </member>
+        <member name="M:Innova.Enums.UsbProduct.IsVersion2DataBuffer(Innova.Enums.UsbProductId)">
+            <summary>
+            Determines whether [is old data buffer] [the specified product id].
+            </summary>
+            <param name="productId">The product id.</param>
+            <returns>
+            	<c>true</c> if [is old data buffer] [the specified product id]; otherwise, <c>false</c>.
+            </returns>
+        </member>
+        <member name="M:Innova.Enums.UsbProduct.IsChinaProduct(Innova.Enums.UsbProductId)">
+            <summary>
+            Determines whether [is china product] [the specified product id].
+            </summary>
+            <param name="productId">The product id.</param>
+            <returns>
+            	<c>true</c> if [is china product] [the specified product id]; otherwise, <c>false</c>.
+            </returns>
+        </member>
+        <member name="M:Innova.Enums.UsbProduct.IsJapanProduct(Innova.Enums.UsbProductId,Innova.Enums.ToolID)">
+            <summary>
+            Determines whether [is japan product] [the specified product id].
+            </summary>
+            <param name="productId">The product id.</param>
+            <param name="toolId">The tool id.</param>
+            <returns>
+            	<c>true</c> if [is japan product] [the specified product id]; otherwise, <c>false</c>.
+            </returns>
+        </member>
+        <member name="P:Innova.Enums.UsbProduct.AllSeries">
+            <summary>
+            Gets all series.
+            </summary>
+            <value>All series.</value>
+        </member>
+        <member name="T:Innova.Enums.ProductInfo">
+            <summary>
+            Custom attribute that provides information about each usb product id
+            </summary>
+        </member>
+        <member name="M:Innova.Enums.ProductInfo.#ctor(System.String)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Innova.Enums.ProductInfo"/> class.
+            </summary>
+            <param name="productName">Name of the product.</param>
+        </member>
+        <member name="M:Innova.Enums.ProductInfo.#ctor(System.String,System.Int32)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Innova.Enums.ProductInfo"/> class.
+            </summary>
+            <param name="productName">Name of the product.</param>
+            <param name="systemSettingsAddress">The system settings address.</param>
+        </member>
+        <member name="M:Innova.Enums.ProductInfo.#ctor(System.String,System.Byte)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Innova.Enums.ProductInfo"/> class.
+            </summary>
+            <param name="productName">Name of the product.</param>
+            <param name="toolId">The tool id.</param>
+        </member>
+        <member name="M:Innova.Enums.ProductInfo.#ctor(System.String,Innova.Enums.BufferFormat)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Innova.Enums.ProductInfo"/> class.
+            </summary>
+            <param name="productName">Name of the product.</param>
+            <param name="bufferFormat">The buffer format.</param>
+        </member>
+        <member name="M:Innova.Enums.ProductInfo.#ctor(System.String,Innova.Enums.BufferFormat,System.Int32)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Innova.Enums.ProductInfo"/> class.
+            </summary>
+            <param name="productName">Name of the product.</param>
+            <param name="bufferFormat">The buffer format.</param>
+            <param name="firmwareAddress">The firmware address.</param>
+        </member>
+        <member name="M:Innova.Enums.ProductInfo.#ctor(System.String,System.Int32,System.Boolean)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Innova.Enums.ProductInfo"/> class.
+            </summary>
+            <param name="productName">Name of the product.</param>
+            <param name="systemSettingsAddress">The system settings address.</param>
+            <param name="isCanConverted">if set to <c>true</c> [is can converted].</param>
+        </member>
+        <member name="M:Innova.Enums.ProductInfo.#ctor(System.String,System.Int32,Innova.Enums.BufferFormat)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Innova.Enums.ProductInfo"/> class.
+            </summary>
+            <param name="productName">Name of the product.</param>
+            <param name="systemSettingsAddress">The system settings address.</param>
+            <param name="bufferFormat">The buffer format.</param>
+        </member>
+        <member name="M:Innova.Enums.ProductInfo.#ctor(System.String,System.Int32,System.Int32,Innova.Enums.BufferFormat)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Innova.Enums.ProductInfo"/> class.
+            </summary>
+            <param name="productName">Name of the product.</param>
+            <param name="systemSettingsAddress">The system settings address.</param>
+            <param name="firmwareAddress">The firmware address.</param>
+            <param name="bufferFormat">The buffer format.</param>
+        </member>
+        <member name="M:Innova.Enums.ProductInfo.#ctor(System.String,System.Int32,System.Byte,Innova.Enums.BufferFormat)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Innova.Enums.ProductInfo"/> class.
+            </summary>
+            <param name="productName">Name of the product.</param>
+            <param name="systemSettingsAddress">The system settings address.</param>
+            <param name="toolId">The tool id.</param>
+            <param name="bufferFormat">The buffer format.</param>
+        </member>
+        <member name="M:Innova.Enums.ProductInfo.#ctor(System.String,System.Int32,System.Byte,Innova.Enums.BufferFormat,System.Int32)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Innova.Enums.ProductInfo"/> class.
+            </summary>
+            <param name="productName">Name of the product.</param>
+            <param name="systemSettingsAddress">The system settings address.</param>
+            <param name="toolId">The tool id.</param>
+            <param name="bufferFormat">The buffer format.</param>
+            <param name="firmwareAddress">The firmware address.</param>
+        </member>
+        <member name="M:Innova.Enums.ProductInfo.#ctor(System.String,System.Int32,System.Byte)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Innova.Enums.ProductInfo"/> class.
+            </summary>
+            <param name="productName">Name of the product.</param>
+            <param name="systemSettingsAddress">The system settings address.</param>
+            <param name="toolId">The tool id.</param>
+        </member>
+        <member name="M:Innova.Enums.ProductInfo.#ctor(System.String,System.Int32,System.Byte,System.Boolean)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Innova.Enums.ProductInfo"/> class.
+            </summary>
+            <param name="productName">Name of the product.</param>
+            <param name="systemSettingsAddress">The system settings address.</param>
+            <param name="toolId">The tool id.</param>
+            <param name="isCanConverted">if set to <c>true</c> [is can converted].</param>
+        </member>
+        <member name="M:Innova.Enums.ProductInfo.#ctor(System.String,System.Int32,System.Int32)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Innova.Enums.ProductInfo"/> class.
+            </summary>
+            <param name="productName">Name of the product.</param>
+            <param name="systemSettingsAddress">The system settings address.</param>
+            <param name="firmwareAddress">The firmware address.</param>
+        </member>
+        <member name="M:Innova.Enums.ProductInfo.#ctor(System.String,System.Int32,System.Byte,System.Boolean,Innova.Enums.BufferFormat)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Innova.Enums.ProductInfo"/> class.
+            </summary>
+            <param name="productName">Name of the product.</param>
+            <param name="systemSettingsAddress">The system settings address.</param>
+            <param name="toolId">The tool id.</param>
+            <param name="isCanConverted">if set to <c>true</c> [is can converted].</param>
+            <param name="bufferFormat">The buffer format.</param>
+        </member>
+        <member name="M:Innova.Enums.ProductInfo.#ctor(System.String,System.Int32,System.Byte,System.Boolean,Innova.Enums.HardwareGroup,Innova.Enums.BufferFormat,System.Int32)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Innova.Enums.ProductInfo"/> class.
+            </summary>
+            <param name="productName">Name of the product.</param>
+            <param name="systemSettingsAddress">The system settings address.</param>
+            <param name="toolId">The tool id.</param>
+            <param name="isCanConverted">if set to <c>true</c> [is can converted].</param>
+            <param name="group">The group.</param>
+            <param name="bufferFormat">The buffer format.</param>
+            <param name="firmwareAddress">The firmware address.</param>
+        </member>
+        <member name="P:Innova.Enums.ProductInfo.SystemSettingsAddress">
+            <summary>
+            Gets the system settings address.
+            </summary>
+            <value>The system settings address.</value>
+        </member>
+        <member name="P:Innova.Enums.ProductInfo.ProductName">
+            <summary>
+            Gets the name of the product.
+            </summary>
+            <value>The name of the product.</value>
+        </member>
+        <member name="P:Innova.Enums.ProductInfo.ToolId">
+            <summary>
+            Gets the tool id.
+            </summary>
+            <value>The tool id.</value>
+        </member>
+        <member name="P:Innova.Enums.ProductInfo.IsCanConverted">
+            <summary>
+            Gets a value indicating whether this instance is can converted.
+            </summary>
+            <value>
+            	<c>true</c> if this instance is can converted; otherwise, <c>false</c>.
+            </value>
+        </member>
+        <member name="P:Innova.Enums.ProductInfo.BufferFormat">
+            <summary>
+            Gets the buffer format.
+            </summary>
+            <value>The buffer format.</value>
+        </member>
+        <member name="P:Innova.Enums.ProductInfo.FirmwareAddress">
+            <summary>
+            Gets the firmware address.
+            </summary>
+            <value>The firmware address.</value>
+        </member>
+        <member name="P:Innova.Enums.ProductInfo.HardwareGroup">
+            <summary>
+            Gets the hardware group.
+            </summary>
+            <value>The hardware group.</value>
+        </member>
+        <member name="T:Innova.Enums.ApplicationInfo">
+            <summary>
+            Custom attribute that provides information about each usb product id
+            </summary>
+        </member>
+        <member name="M:Innova.Enums.ApplicationInfo.#ctor(System.Boolean)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Innova.Enums.ApplicationInfo"/> class.
+            </summary>
+            <param name="isSupportLocalSoftware">if set to <c>true</c> [is support local software].</param>
+        </member>
+        <member name="P:Innova.Enums.ApplicationInfo.IsSupportLocalSoftware">
+            <summary>
+            Gets a value indicating whether this instance is support local software.
+            </summary>
+            <value>
+            	<c>true</c> if this instance is support local software; otherwise, <c>false</c>.
+            </value>
+        </member>
+        <member name="T:Innova.Enums.ConvertInfoAttribute">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:Innova.Enums.ConvertInfoAttribute.#ctor(Innova.Enums.ToolSetupExtensions)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Innova.Enums.ConvertInfoAttribute"/> class.
+            </summary>
+            <param name="setup">The setup.</param>
+        </member>
+        <member name="P:Innova.Enums.ConvertInfoAttribute.ToolSetupExtensions">
+            <summary>
+            Gets the tool setup extensions.
+            </summary>
+            <value>The tool setup extensions.</value>
+        </member>
+        <member name="T:Innova.Enums.ToolSetupExtensions">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="T:Innova.Enums.HardwareGroup">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="T:Innova.Enums.SoftwareType">
+            <summary>
+            Software type
+            </summary>
+        </member>
+        <member name="T:Innova.Enums.ToolLEDStatus">
+            <summary>
+            The tool LED status 
+            </summary>
+        </member>
+        <member name="F:Innova.Enums.ToolLEDStatus.Off">
+            <summary>
+            Off status.
+            </summary>
+        </member>
+        <member name="F:Innova.Enums.ToolLEDStatus.Green">
+            <summary>
+            Green status.
+            </summary>
+        </member>
+        <member name="F:Innova.Enums.ToolLEDStatus.Yellow">
+            <summary>
+            Yellow status.
+            </summary>
+        </member>
+        <member name="F:Innova.Enums.ToolLEDStatus.Red">
+            <summary>
+            Red status.
+            </summary>
+        </member>
+        <member name="F:Innova.Enums.ToolLEDStatus.Error">
+            <summary>
+            Error status.
+            </summary>
+        </member>
+        <member name="T:Innova.Enums.ToolMilStatus">
+            <summary>
+            The tool Mil Status
+            </summary>
+        </member>
+        <member name="F:Innova.Enums.ToolMilStatus.Off">
+            <summary>
+            Off status.
+            </summary>
+        </member>
+        <member name="F:Innova.Enums.ToolMilStatus.On">
+            <summary>
+            On status.
+            </summary>
+        </member>
+        <member name="T:Innova.Enums.ToolTypeFormat">
+            <summary>
+            The tool format.  The tool reader utilizes the type to redirect to the appropriate libraries
+            </summary>
+        </member>
+        <member name="T:Innova.Enums.VarianceReason">
+            <summary>
+             Variance reason
+            </summary>
+        </member>
+        <member name="F:Innova.Enums.VarianceReason.Replacement">
+            <summary>
+            Replacement
+            </summary>
+        </member>
+        <member name="F:Innova.Enums.VarianceReason.Full">
+            <summary>
+            Full Refund (less %15 restocking fee)
+            </summary>
+        </member>
+        <member name="F:Innova.Enums.VarianceReason.FiftyPercent">
+            <summary>
+            Refund
+            </summary>
+        </member>
+        <member name="T:Innova.Enums.VendorId">
+            <summary>
+             Vendor Ids
+            </summary>
+        </member>
+        <member name="F:Innova.Enums.VendorId.Innova">
+            <summary>
+            Innova vendor id
+            </summary>
+        </member>
+    </members>
+</doc>

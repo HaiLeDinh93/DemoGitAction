@@ -1,0 +1,20 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Autofac" Version="5.1.2" />
+    <PackageReference Include="log4net" Version="2.0.8" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\CarMD.Fleet.Adapter\CarMD.Fleet.Adapter.csproj" />
+    <ProjectReference Include="..\CarMD.Fleet.Common\CarMD.Fleet.Common.csproj" />
+    <ProjectReference Include="..\CarMD.Fleet.Core\CarMD.Fleet.Core.csproj" />
+    <ProjectReference Include="..\CarMD.Fleet.Data\CarMD.Fleet.Data.csproj" />
+    <ProjectReference Include="..\CarMD.Fleet.Repository\CarMD.Fleet.Repository.csproj" />
+  </ItemGroup>
+
+</Project>
