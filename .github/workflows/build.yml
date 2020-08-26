@@ -26,5 +26,5 @@ jobs:
         username: ${{ secrets.USERNAME }}
         key: ${{ secrets.KEY }}
         port: ${{ secrets.PORT }}
-        command_timeout : 15m
+        command_timeout : 10m
         script: script.bat action-test
