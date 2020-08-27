@@ -19,18 +19,11 @@ jobs:
     # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
     - uses: actions/checkout@v2
     # Runs a set of commands using the runners shell
-    - name: Add SSH Credentials
-      uses: shimatoro/ssh-key-action@v2
+    - name: executing remote ssh commands using ssh key
+      uses: appleboy/ssh-action@master
       with:
-        key: ${{ secrets.KEY }} # required, this will be used when transferring files to your deploy targets
-        known_hosts: ${{ secrets.HOST }} # required, should match up with your deploy targets (see below)
-      
-    # Step 3: Deploy!
-    - name: Deploy to Staging
-      uses: JorgenVatle/docker-compose-deploy@v1.0
-      with:
-        deploy_targets: ${{ secrets.HOST }} # required, comma separated list of servers to deploy to.
-
-        ssh_user: ${{ secrets.USERNAME }} # optional, user to connect to deploy targets with. Defaults to 'root'
-        compose_file: 'docker-compose.yml' # optional, path/filename of your docker-compose file. Defaults to 'docker-compose.yml'
-        validate_container: 'carmd.shell.api' # optional, validate that the given container name is running. Otherwise, throw an error. Defaults to 'app' 
+        host: ${{ secrets.HOST }}
+        username: ${{ secrets.USERNAME }}
+        key: ${{ secrets.KEY }}
+        port: ${{ secrets.PORT }}
+        script: script.bat
