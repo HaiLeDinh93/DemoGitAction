@@ -25,3 +25,5 @@ jobs:
         username: HaiLeDinh93
         password: ${{ secrets.GITHUB_TOKEN }}
         dockerfile: WebApplication/Dockerfile
+        repository: hailedinh93/demogitaction/action-test
+        tag_with_ref: true
