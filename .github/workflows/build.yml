@@ -25,5 +25,4 @@ jobs:
         password: ${{ secrets.DOCKER_PASSWORD }}
         repository: haihamho/git-action-demo
         dockerfile: WebApplication/Dockerfile
-        tags: sprint
         tag_with_ref: true
