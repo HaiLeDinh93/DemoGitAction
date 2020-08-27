@@ -19,12 +19,17 @@ jobs:
     # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
     - uses: actions/checkout@v2
     # Runs a set of commands using the runners shell
-    - name: executing remote ssh commands using ssh key
-      uses: appleboy/ssh-action@master
+    - name: Deploy to Docker Host
+      uses: wshihadeh/docker-deployment-action@v1
       with:
-        host: ${{ secrets.HOST }}
-        username: ${{ secrets.USERNAME }}
-        key: ${{ secrets.KEY }}
-        port: ${{ secrets.PORT }}
-        command_timeout : 10m
-        script: script.bat action-test
+        remote_docker_host: ${{ secrets.USERNAME }}@${{ secrets.HOST }}
+        ssh_private_key: ${{ secrets.DOCKER_SSH_PRIVATE_KEY }}
+        ssh_public_key: ${{ secrets.DOCKER_SSH_PUBLIC_KEY }}
+        deployment_mode: docker-compose
+        copy_stack_file: true
+        deploy_path: /my-deployment
+        stack_file_name: docker-compose.yaml 
+        keep_files: 5
+        args: up -d
+        docker_prune: 'false'
+        pull_images_first: 'false'
