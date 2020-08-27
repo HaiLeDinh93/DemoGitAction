@@ -5,7 +5,7 @@
     <CopyRefAssembliesToPublishDirectory>false</CopyRefAssembliesToPublishDirectory>
     <UserSecretsId>30d326ce-d31a-4632-91b3-5bd9c1ce917d</UserSecretsId>
     <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
-    <DockerDefaultTargetOS>Linux</DockerDefaultTargetOS>
+    <DockerDefaultTargetOS>Windows</DockerDefaultTargetOS>
     <DockerfileContext>.</DockerfileContext>
   </PropertyGroup>
 
